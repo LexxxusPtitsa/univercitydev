@@ -1,0 +1,100 @@
+include ../layout/mixins
+
+.main 
+    .main__inner
+        .main__header
+            .main__header-top
+                .container
+                    .main__header-univer Российский Экономический Университет <br>имени Г. В. Плеханова
+                    .main__header-merge
+                        .main__header-conts
+                            a(href="#").main__header-mail  info@kapitany-russia.ru
+                            a(href="#").main__header-phone 8 (800) 500 93 71
+                        .main__header-city.main__header-city--top.city
+                            .city__selected Москва
+                            .city__list
+                                .city__list-header Выбрать город
+                                .city__list-inner
+                                    .city__list-item Волгоград
+                                    .city__list-item Воронеж
+                                    .city__list-item Краснодар
+                                    .city__list-item.city__list-item--active Москва
+                                    .city__list-item Саратов
+                                    .city__list-item Севастополь
+                                    .city__list-item Ростов
+            .main__header-bottom
+                .container
+                    .main__header-logo
+                        a.logo
+                            img.logo__img(src="img/logo.png", alt="")
+                            .logo__text Капитаны
+                    .main__header-menus
+                        .main__header-city.main__header-city--bottom.city
+                            .city__selected Москва
+                            .city__list
+                                .city__list-header Выбрать город
+                                    .city__close
+                                .city__list-inner
+                                    .city__list-item Волгоград
+                                    .city__list-item Воронеж
+                                    .city__list-item Краснодар
+                                    .city__list-item.city__list-item--active Москва
+                                    .city__list-item Саратов
+                                    .city__list-item Севастополь
+                                    .city__list-item Ростов
+                        .main__header-nav
+                            .main__header-toggle.toggle
+                                .toggle__inner
+                                    .toggle__lines
+                                        .toggle__inner-white
+                                        .toggle__inner-yellow
+                            nav.nav
+                                .nav__links
+                                    .nav__links-inner
+                                        a.nav__link(href="#") Абитуриентам
+                                        a.nav__link(href="#") Школьнику?
+                                        a.nav__link(href="#") О факультете
+                                        a.nav__link(href="#") Мероприятия
+                                        a.nav__link(href="#") Новости
+                                    a(href="#").nav__button.button Получить консультацию
+                                    .nav__social
+                                        a.nav__social-link(href="#")    
+                                        a.nav__social-link(href="#")    
+                                        a.nav__social-link(href="#")    
+                                        a.nav__social-link(href="#")                        
+        .main__body
+            .container
+                .main__title Факультет бизнеса «Капитаны»
+                .main__subtitle.
+                    Это получение высшего образования<br class="br"> и возможность запуска своего проекта одновременно
+                a(href="").main__button.button.button--fill Подробнее
+                .main__advantages
+                    .main__advantage.main__advantage--first.
+                        Престижное экономическое образование <br class="br">в одном из лучших <br class="br">университетов страны    
+                    .main__advantage.main__advantage--second.
+                        Уникальные управленческие <br class="br">и бизнес- модули,  связанные <br class="br">с проектной деятельностью
+                    .main__advantage.main__advantage--third.
+                        Современный учебный <br class="br">корпус в центре Москвыы
+        .main__calendar
+            a(href="").main__calendar-item
+                .main__calendar-date
+                    .main__calendar-day 15
+                    .main__calendar-month февраль
+                    .main__calendar-time 12:00
+                .main__calendar-describe.
+                    26 апреля Финал<br> Акселератора института<br> им. Шифферса
+            a(href="").main__calendar-item
+                .main__calendar-date
+                    .main__calendar-day 28
+                    .main__calendar-month февраль
+                    .main__calendar-time 12:00
+                .main__calendar-describe.
+                    На чем мечтают делать деньги<br> современные школьники<br> (1 часть)
+            a(href="").main__calendar-item
+                .main__calendar-date
+                    .main__calendar-day 04
+                    .main__calendar-month март
+                    .main__calendar-time 12:00
+                .main__calendar-describe.
+                    Online-вебинар для<br> поступающих в магистратуру<br> в 2019 учебном году.
+            a(href="#").main__calendar-arrow

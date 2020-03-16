@@ -1,0 +1,83 @@
+include ../layout/mixins
+
+.programm
+    .container
+        .programm__inner
+            .programm__header
+                h2.programm__title.title Программа обучения
+                .programm__term 4 года обучения
+                .programm__cost от 340 000 руб
+                a(href="#").programm__button.button.button--fill Как поступить
+            .programm__body
+                .programm__nav
+                    ul
+                        +programmNavLink('#features','Особенности', true)
+                        +programmNavLink('#direction','Направления')
+                        +programmNavLink('#bModules','Бизнес-модули')
+                        +programmNavLink('#teachers','Преподаватели')
+                        +programmNavLink('#placement','Трудоустройство')
+                .programm__description
+                    .programm__description-inner.programm__description-inner--active#features
+                        .programm__features
+                            .programm__features-title Особенности
+                            .programm__feature.
+                                На факультете бизнеса "Капитаны" студент получает 50% теории и 50% практики, начиная с первого курса. Занятия ведут ведущие профессоры университета, а также действующие предприниматели и сотрудники крупных компаний.
+                            .programm__feature.
+                                Вместе с теоретическим обучением студент проходит различные управленческие и бизнес модули, что позволяет ему быстрее адаптироваться к рынку и успешнее трудоустраиваться, имея необходимые навыки.
+                            .programm__feature.
+                                Активная и насыщенная студенческая жизнь, крепкое и сплоченное сообщество, а также большое количество дополнительной деятельности ждет студента уже с первого года обучения.
+                    .programm__description-inner#direction
+                        .programm__directions
+                            .programm__direction-img
+                                img(src="./img/program/diplom.png", alt="")
+                            .programm__direction-inner
+                                .programm__direction
+                                    .programm__direction-title.
+                                        Государственное <br> и муниципальное управление
+                                    .programm__direction-desc.
+                                        Областью профессиональной деятельности выпускников является управление на федеральном, региональном и муниципальных уровнях власти, а также в крупных корпоративных коммерческих структурах, в том числе c государственным участием.
+                                .programm__direction
+                                    .programm__direction-title.
+                                        Менеджмент в инновационном <br> и социальном предпринимательстве
+                                    .programm__direction-desc.
+                                        В основе программы подготовки лежит учебно-прикладная и практическая работа по проектированию и внедрению собственного бизнес-проекта в инновационной сфере.
+                    .programm__description-inner#bModules
+                        .programm__modules
+                            .programm__module-items
+                                +programmModuleItem(1,'Основы проектной деятельности')
+                                +programmModuleItem(2,'Основы event-менеджмента')
+                                +programmModuleItem(3,'Мастер-классы')
+                                +programmModuleItem(4,'Бизнес-пилот')
+                                +programmModuleItem(5,'Блокинг, создание личного бренда')
+                                +programmModuleItem(6,'SMM и интернет продажи')
+                                +programmModuleItem(7,'Книжный клуб')
+                    .programm__description-inner#teachers
+                        .programm__teachers
+                            .programm__teachers-inner
+                                +programmTeacher('./img/program/teacher_1.png', 'Никита Рождественский', 'Преподаватель, трекер', 'Управленческая экономика')
+                                +programmTeacher('./img/program/teacher_2.png', 'Николай Мрочковский', 'Кандидат экономических наук', 'Предприниматель, инвестор, бизнес-консультант')
+                                +programmTeacher('./img/program/teacher_3.png', 'Андрей Григорьев', 'Преподаватель, трекер', 'Управленческая экономика')
+                                +programmTeacher('./img/program/teacher_4.png', '​Андрей Григорьев', 'Преподаватель, кандидат психологических наук', 'Психология,  корпоративный менеджмент')
+                        .programm__teachers-button.button Смотреть всех
+                    .programm__description-inner#placement
+                        .programm__placement
+                            .programm__placement-item
+                                .programm__placement-top
+                                    .programm__placement-title Менеджер проектов
+                                    .programm__placement-cost 100 000
+                                .programm__placement-bottom Гоструктуры,  Аппарат правительства
+                            .programm__placement-item
+                                .programm__placement-top
+                                    .programm__placement-title Руководитель отдела
+                                    .programm__placement-cost 140 000
+                                .programm__placement-bottom Гоструктуры,  Аппарат правительства
+                            .programm__placement-item
+                                .programm__placement-top
+                                    .programm__placement-title Менеджер проектов
+                                    .programm__placement-cost 100 000
+                                .programm__placement-bottom Гоструктуры,  Аппарат правительства
+                            .programm__placement-item
+                                .programm__placement-top
+                                    .programm__placement-title Руководитель отдела
+                                    .programm__placement-cost 140 000
+                                .programm__placement-bottom Гоструктуры,  Аппарат правительства

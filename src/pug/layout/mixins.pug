@@ -1,0 +1,70 @@
+mixin programmNavLink(link, name, first)
+    if(first)
+        li.programm__nav-li.programm__nav-li--active
+            a(href=link).programm__nav-link.programm__nav-link--active=name
+    else
+        li.programm__nav-li
+            a(href=link).programm__nav-link=name
+
+
+mixin programmModuleItem(num, name)
+    .programm__module-item
+        div.programm__module-icon(class='programm__module-icon--'+num)
+        .programm__module-name=name
+
+mixin programmTeacher(link, name, rank, pos)
+    .programm__teacher
+        .programm__teacher-photo
+            img(src=link alt="")
+        .programm__teacher-info
+            .programm__teacher-name=name
+            .programm__teacher-rank=rank
+            .programm__teacher-position=pos
+
+mixin slides()
+    div
+        div.slide
+            .slide__inner
+                .slide__preview
+                    .slide__img
+                        img(src="img/life/preview.jpg", alt="")
+                .slide__info
+                    .slide__text
+                        .slide__text-title Бизнес-интенсив “Город”
+                        .slide__text-desc.
+                            Выездной интенсив на несколько дней, в которые ребята учатся разрабатывать свои бизнес-проекты, работать в командах, также у абитуриента есть возможность проникнуться атмосферой факультета и почувствовать настоящую жизнь Капитана.
+                        .slide__lnk
+                            a(href="#") Подробнее
+                    .slide__comment
+                        .slide__comment-img
+                            img(src="img/life/avatar.jpg", alt="")
+                        .slide__comment-inner
+                            .slide__comment-name Сергей Кузьмин
+                            .slide__comment-text.
+                                Было круто, был на городе! Спасибо организаторам за мероприятие 
+                .slide__button.button Подробнее
+
+mixin slidesSucsess()
+    div
+        div.slide
+            .slide__inner
+                .slide__preview
+                    .slide__img
+                        img(src="img/life/uley.jpg", alt="")
+                .slide__info.slide__info-second
+                    .slide__text
+                        .slide__text-title Антикафе "Улей" 
+                        .slide__text-desc.
+                            Управляющая компания в сфере такси, принимает автомобили у собственников и организует сдачу в аренду водителям для работы в такси.                    .slide__comment
+                        .slide__text-url
+                            a(href="#") vk.com/uleybzz
+
+
+mixin reviews(link)
+    .reviews__item
+        img(src=link, alt="").reviews__item-img
+        .reviews__item-inner
+            .reviews__item-info
+                .reviews__item-title Отзывы родителей
+                .reviews__item-text.
+                    Я считаю, что понять свои способности и <br class="br">осознать свой потенциал может только <br class="br">человек, который взялся за дело

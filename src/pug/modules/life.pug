@@ -1,0 +1,30 @@
+include ../layout/mixins
+
+.life
+    .container
+        .life__inner
+            .life__header
+                .life__title.title Активная студенческая жизнь
+                .arrows.arrows--descktop
+                            .prev.prev-frst
+                            .numSlides 1/12
+                            .next.next-frst
+            .life__slider
+                .life__slider-inner
+                    .slider_first                 
+                        +slides()
+                        +slides()
+                        +slides()
+                        +slides()
+                        +slides()
+                        +slides()
+                        +slides()
+                        +slides()
+                        +slides()
+                        +slides()
+                        +slides()
+                        +slides()
+                    .arrows.arrows--mob
+                        .prev.prev-frst
+                        .numSlides 1/12
+                        .next.next-frst

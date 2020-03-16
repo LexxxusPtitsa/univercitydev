@@ -1,0 +1,20 @@
+// import presets
+
+@import "./presets/bp";
+@import "./presets/reset";
+@import "./presets/fonts";
+@import './presets/vars.scss';
+
+// import - blocks
+@import "./blocks/head";
+@import "./blocks/mainBlock";
+@import "./blocks/studyProgram";
+@import "./blocks/about";
+@import "./blocks/life";
+@import "./blocks/grant";
+@import "./blocks/sucsess";
+@import "./blocks/reviews";
+@import "./blocks/faq";
+@import "./blocks/request";
+@import "./blocks/footer";
+

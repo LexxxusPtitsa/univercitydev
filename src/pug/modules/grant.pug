@@ -1,0 +1,18 @@
+include ../layout/mixins
+
+.grant
+    .container
+        .grant__inner
+            .grant__title.title Получи <br class="br">образование с грантом <br class="br">до 120  000 рублей
+            form(action="").grant__form
+                input(type="text" placeholder="Ваше имя*").grant__input
+                input(type="text" placeholder="Ваш телефон*").grant__input
+                input(type="text" placeholder="vk.com/").grant__input
+                button(type="submit").grant__button.button.button--fill Отправить
+                .grant__conditions
+                    input(type="checkbox", name="checkbox").grant__checkbox#grant__checkbox
+                    label(for="grant__checkbox").grant__label
+                    .grant__conditions-inner
+                        .grant__conditions-text Я согласен с условиями обработки 
+                        a(href="").grant__conditions-link персональных  данных
+

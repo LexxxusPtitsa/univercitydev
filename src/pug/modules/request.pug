@@ -1,0 +1,23 @@
+include ../layout/mixins
+
+.request
+    .container
+        .request__bg
+            .request__inner
+                .request__title.title Оставьте заявку <br class="br">На бесплатную <br class="br">консультацию
+                form(action="").request__form
+                    input(type="text" placeholder="Ваше имя*").request__input.request__input--name
+                    input(type="text" placeholder="Ваш телефон*").request__input.request__input--phone
+                    input(type="text" placeholder="vk.com/профиль").request__input.request__input--vk
+                    button(type="submit").request__button.button.button--fill Отправить
+                    .request__conditions-outer
+                        .request__conditions
+                            input(type="checkbox", name="checkbox").request__checkbox#request__checkbox
+                            label(for="request__checkbox").request__label
+                            .request__conditions-inner
+                                .request__conditions-text Я согласен с условиями обработки 
+                                a(href="").request__conditions-link персональных  данных
+                            //- input(type="radio", name="radio").request__radio
+                            //- .request__conditions-inner
+                            //-     .request__conditions-text Я согласен с условиями обработки 
+                            //-     a(href="").request__conditions-link персональных  данных
